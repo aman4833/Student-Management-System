@@ -1,0 +1,343 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+.login{
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.65),
+      rgba(0,0,0,0.75)
+    ),
+
+    url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2070&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+@keyframes gradientMove {
+
+  0%{
+    background-position: 0% 50%;
+  }
+
+  50%{
+    background-position: 100% 50%;
+  }
+
+  100%{
+    background-position: 0% 50%;
+  }
+
+}
+
+.login__left{
+  display: none;
+}
+
+.login__right{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__card{
+
+  width: 100%;
+  max-width: 430px;
+
+  background: rgba(255,255,255,0.12);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  backdrop-filter: blur(18px);
+
+  border-radius: 24px;
+
+  padding: 45px;
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+
+  color: white;
+}
+
+.login__logo{
+
+  width: 85px;
+  height: 85px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 25px;
+
+  font-size: 38px;
+}
+
+.login__card h2{
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.login__subtitle{
+  text-align: center;
+  color: #dbeafe;
+  margin-bottom: 35px;
+}
+
+.login__group{
+  margin-bottom: 22px;
+}
+
+.login__group label{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.login__group input{
+
+  width: 100%;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 15px;
+
+  background: rgba(255,255,255,0.15);
+
+  color: white;
+}
+
+.login__group input::placeholder{
+  color: #d1d5db;
+}
+
+.login__button{
+
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.login__button:hover{
+
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+}
+
+.login__footer{
+
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #dbeafe;
+}
+
+.login__footer a{
+
+  color: #60a5fa;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.login__footer a:hover{
+
+  color: white;
+}
+
+.login__input {
+
+  display: flex;
+
+  align-items: center;
+
+  background:
+    rgba(255,255,255,0.06);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius: 14px;
+
+  padding: 0 1rem;
+
+  gap: 0.8rem;
+}
+
+.login__input input {
+
+  flex: 1;
+
+  background: transparent;
+
+  border: none;
+
+  outline: none;
+
+  color: white;
+
+  padding: 1rem 0;
+
+  font-size: 1rem;
+}
+
+.login__input svg {
+
+  color: #94a3b8;
+}
+
+.login__eye {
+
+  cursor: pointer;
+}
+
+.login__options {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 1rem;
+
+  color: #cbd5e1;
+
+  font-size: 0.9rem;
+}
+
+.login__button {
+
+  width: 100%;
+
+  margin-top: 1.5rem;
+
+  border: none;
+
+  border-radius: 14px;
+
+  padding: 1rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #60a5fa
+    );
+
+  color: white;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.login__button:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(37,99,235,0.35);
+}
+
+.login__input input::placeholder {
+
+  color: #cbd5e1;
+}
+
+.login__input {
+
+  background:
+    rgba(255,255,255,0.06);
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  backdrop-filter: blur(10px);
+}
+.login__input input {
+
+  background: transparent !important;
+
+  border: none !important;
+
+  outline: none !important;
+
+  box-shadow: none !important;
+
+  color: white !important;
+
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+
+  -webkit-text-fill-color: white !important;
+
+  caret-color: white;
+}
+
+.login__input input:-webkit-autofill,
+.login__input input:-webkit-autofill:hover,
+.login__input input:-webkit-autofill:focus,
+.login__input input:-webkit-autofill:active {
+
+  -webkit-box-shadow:
+    0 0 0 1000px transparent inset !important;
+
+  -webkit-text-fill-color:
+    white !important;
+
+  transition:
+    background-color 9999s ease-in-out 0s;
+}

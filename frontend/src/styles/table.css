@@ -1,0 +1,229 @@
+.table {
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  background:
+    rgba(255,255,255,0.04);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(12px);
+
+  padding: 1rem;
+}
+
+table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  color: white;
+}
+
+thead {
+
+  background:
+    rgba(255,255,255,0.05);
+}
+
+th {
+
+  padding: 1rem;
+
+  text-align: left;
+
+  font-size: 0.92rem;
+
+  color: #94a3b8;
+}
+
+td {
+
+  padding: 1rem;
+
+  border-top:
+    1px solid rgba(255,255,255,0.06);
+}
+
+tr {
+
+  transition: 0.3s ease;
+}
+
+tr:hover {
+
+  background:
+    rgba(255,255,255,0.03);
+}
+
+.table__student {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.table__avatar {
+
+  width: 48px;
+
+  height: 48px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #60a5fa
+    );
+
+  font-size: 1.2rem;
+}
+
+.table__student h4 {
+
+  margin: 0;
+
+  font-size: 0.95rem;
+}
+
+.table__student p {
+
+  margin: 0.2rem 0 0;
+
+  font-size: 0.82rem;
+
+  color: #94a3b8;
+}
+
+.table__sgpa {
+
+  background:
+    rgba(16,185,129,0.15);
+
+  color: #10b981;
+
+  padding: 0.45rem 0.8rem;
+
+  border-radius: 999px;
+
+  font-weight: 700;
+}
+
+.table__status {
+
+  padding: 0.45rem 0.9rem;
+
+  border-radius: 999px;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+}
+
+.table__status--active {
+
+  background:
+    rgba(16,185,129,0.15);
+
+  color: #10b981;
+}
+
+.table__status--passed {
+
+  background:
+    rgba(59,130,246,0.15);
+
+  color: #3b82f6;
+}
+
+.table__status--dropped {
+
+  background:
+    rgba(239,68,68,0.15);
+
+  color: #ef4444;
+}
+
+.table__status--alumni {
+
+  background:
+    rgba(168,85,247,0.15);
+
+  color: #a855f7;
+}
+
+.table__actions {
+
+  display: flex;
+
+  gap: 0.7rem;
+}
+
+.table__edit,
+.table__delete {
+
+  border: none;
+
+  width: 38px;
+
+  height: 38px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  color: white;
+
+  transition: 0.3s ease;
+}
+
+.table__edit {
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #3b82f6
+    );
+}
+
+.table__delete {
+
+  background:
+    linear-gradient(
+      135deg,
+      #dc2626,
+      #ef4444
+    );
+}
+
+.table__edit:hover,
+.table__delete:hover {
+
+  transform: translateY(-2px);
+}
+
+.table__empty {
+
+  padding: 3rem;
+
+  text-align: center;
+
+  color: #cbd5e1;
+}

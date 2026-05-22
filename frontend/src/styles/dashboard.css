@@ -1,0 +1,116 @@
+.dashboard{
+
+  display: flex;
+
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      rgba(15,23,42,0.88),
+      rgba(15,23,42,0.9)
+    ),
+
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2070&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.dashboard__main{
+
+  flex: 1;
+
+  padding: 25px;
+}
+
+.dashboard__content {
+
+  padding: 2rem;
+}
+
+.dashboard__hero {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37,99,235,0.25),
+      rgba(15,23,42,0.6)
+    );
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 24px;
+
+  padding: 2.5rem;
+
+  margin-bottom: 2rem;
+}
+
+.dashboard__hero h1 {
+
+  color: white;
+
+  font-size: 2.4rem;
+
+  margin-bottom: 0.7rem;
+}
+
+.dashboard__hero p {
+
+  color: #cbd5e1;
+
+  max-width: 700px;
+
+  line-height: 1.7;
+}
+
+.dashboard__grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+  gap: 1.5rem;
+
+  margin-top: 2rem;
+}
+
+.dashboard__panel {
+
+  background:
+    rgba(255,255,255,0.05);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius: 22px;
+
+  padding: 2rem;
+
+  backdrop-filter: blur(12px);
+}
+
+.dashboard__panel h2 {
+
+  color: white;
+
+  margin-bottom: 1rem;
+}
+
+.dashboard__panel p,
+.dashboard__panel li {
+
+  color: #cbd5e1;
+
+  line-height: 1.7;
+}
+
+.dashboard__panel ul {
+
+  padding-left: 1rem;
+}

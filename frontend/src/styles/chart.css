@@ -1,0 +1,23 @@
+.chart {
+
+  margin-top: 2rem;
+
+  background:
+    rgba(255,255,255,0.05);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius: 24px;
+
+  padding: 2rem;
+
+  backdrop-filter: blur(12px);
+
+  color: white;
+}
+
+.chart h2 {
+
+  margin-bottom: 2rem;
+}
